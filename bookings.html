@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Ben J Stevens for your church or event. Bring Christ-centered, expository preaching to your congregation.">
+    <title>Book Speaking | Ben J Stevens Ministry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header" class="header header-solid">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>Ben J Stevens</span>
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="sermons.html" class="nav-link">Sermons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <a href="bookings.html" class="btn btn-primary btn-nav">Book Ben J</a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="sermons.html" class="mobile-nav-link">Sermons</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="bookings.html" class="btn btn-primary btn-full">Book Ben J</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="page-content">
+        <!-- Hero Section -->
+        <section class="booking-hero">
+            <!-- REPLACE: Update background image in styles.css .booking-hero -->
+            <div class="booking-hero-overlay"></div>
+            <div class="booking-hero-content">
+                <div class="booking-hero-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                    </svg>
+                </div>
+                <h1 class="booking-hero-title">Book Ben J Stevens for Your Church or Event</h1>
+                <p class="booking-hero-text">Bring Christ-centered, expository preaching to your congregation. Ben J is available for revivals, conferences, special services, and leadership training.</p>
+                <button class="btn btn-primary btn-lg btn-lift" id="open-booking-modal">Request a Booking</button>
+            </div>
+        </section>
+
+        <!-- Speaking Topics -->
+        <section class="section bg-off-white">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-divider center"></div>
+                    <h2 class="section-title center">Speaking Topics</h2>
+                    <p class="section-subtitle">Ben J is available to speak on a variety of topics tailored to your congregation's needs.</p>
+                </div>
+
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <svg class="topic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        <h3 class="topic-title">Expository Preaching</h3>
+                        <p class="topic-text">Verse-by-verse exposition of Scripture, bringing out the meaning and application of God's Word.</p>
+                    </div>
+                    <div class="topic-card">
+                        <svg class="topic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        <h3 class="topic-title">Revival Services</h3>
+                        <p class="topic-text">Multi-day meetings focused on spiritual renewal, repentance, and awakening within the church.</p>
+                    </div>
+                    <div class="topic-card">
+                        <svg class="topic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h3 class="topic-title">Conference Speaking</h3>
+                        <p class="topic-text">Keynote addresses and breakout sessions for conferences, retreats, and special events.</p>
+                    </div>
+                    <div class="topic-card">
+                        <svg class="topic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                        <h3 class="topic-title">Leadership Training</h3>
+                        <p class="topic-text">Equipping pastors, elders, and church leaders for effective ministry and biblical leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What to Expect -->
+        <section class="section bg-cream">
+            <div class="container">
+                <div class="expect-grid">
+                    <div class="expect-content">
+                        <div class="section-divider"></div>
+                        <h2 class="section-title">What to Expect</h2>
+                        <p class="expect-intro">When you invite Ben J to minister at your church or event, you can expect a humble servant who is committed to faithfully proclaiming God's Word.</p>
+                        <ul class="expect-list">
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Thoroughly prepared, biblically faithful messages
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Humble, servant-hearted ministry approach
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Flexible scheduling to meet your church's needs
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Follow-up resources for continued growth
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                No speaker fees—love offerings accepted
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Prayer support before, during, and after the event
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="expect-image">
+                        <!-- REPLACE: Replace src with actual worship/ministry image -->
+                        <img src="images/worship-placeholder.jpg" alt="Worship service">
+                        <div class="expect-image-accent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-off-white">
+            <div class="container text-center">
+                <h2 class="section-title">Ready to Schedule?</h2>
+                <p class="section-subtitle" style="max-width: 600px; margin: 0 auto 2rem;">We'd love to hear from you. Click below to submit your booking request, and our team will respond within 48 hours.</p>
+                <button class="btn btn-primary btn-lg" id="open-booking-modal-2">Request a Booking</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal">
+            <button class="modal-close" id="close-booking-modal" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <h2 class="modal-title">Booking Request</h2>
+                <p class="modal-subtitle">Fill out the form below and we'll be in touch within 48 hours.</p>
+            </div>
+            <form class="booking-form" id="booking-form">
+                <div class="form-group">
+                    <label for="booking-name" class="form-label">Your Name *</label>
+                    <input type="text" id="booking-name" name="name" class="form-input" placeholder="John Smith" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-org" class="form-label">Church / Organization *</label>
+                    <input type="text" id="booking-org" name="organization" class="form-input" placeholder="First Baptist Church" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-email" class="form-label">Email Address *</label>
+                    <input type="email" id="booking-email" name="email" class="form-input" placeholder="pastor@church.org" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-date" class="form-label">Preferred Event Date</label>
+                    <input type="date" id="booking-date" name="date" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="booking-message" class="form-label">Tell us about your event</label>
+                    <textarea id="booking-message" name="message" class="form-textarea" rows="4" placeholder="Describe the event, expected attendance, and any specific topics you'd like addressed..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="newsletter-grid">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-title">Stay Connected</h3>
+                        <p class="newsletter-text">Receive weekly devotionals, sermon updates, and ministry news.</p>
+                    </div>
+                    <form class="newsletter-form" id="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary btn-icon-only" aria-label="Subscribe">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Ben J Stevens</span>
+                        </a>
+                        <p class="footer-tagline">Preaching Truth. Reaching People. Transforming Lives.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 class="footer-heading">Ministry</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="sermons.html">Sermons</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 class="footer-heading">Connect</h4>
+                        <ul>
+                            <li><a href="bookings.html">Book Speaking</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4 class="footer-heading">Follow</h4>
+                        <div class="social-links">
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                                </svg>
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; <span id="current-year"></span> Ben J Stevens Ministry. All rights reserved.</p>
+                    <p>Built with faith and purpose.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch sermons and teachings from Ben J Stevens. Biblical messages to encourage your faith and deepen your walk with Christ.">
+    <title>Sermons & Media | Ben J Stevens Ministry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header" class="header header-solid">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>Ben J Stevens</span>
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="sermons.html" class="nav-link active">Sermons</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <a href="bookings.html" class="btn btn-primary btn-nav">Book Ben J</a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="sermons.html" class="mobile-nav-link">Sermons</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="bookings.html" class="btn btn-primary btn-full">Book Ben J</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="page-content">
+        <!-- Hero Section -->
+        <section class="page-hero-simple bg-cream">
+            <div class="container text-center">
+                <div class="section-divider center"></div>
+                <h1 class="page-title">Sermons & Media</h1>
+                <p class="page-subtitle">Explore biblical teaching that will encourage your faith and deepen your walk with Christ.</p>
+            </div>
+        </section>
+
+        <!-- Filter Tabs -->
+        <section class="filter-section bg-off-white">
+            <div class="container">
+                <div class="filter-tabs" id="sermon-filters">
+                    <button class="filter-btn active" data-filter="all">All Messages</button>
+                    <button class="filter-btn" data-filter="sermons">Sermons</button>
+                    <button class="filter-btn" data-filter="teachings">Teachings</button>
+                    <button class="filter-btn" data-filter="shorts">Short Messages</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermons Grid -->
+        <section class="section bg-off-white" style="padding-top: 0;">
+            <div class="container">
+                <!-- REPLACE: Update sermon data with actual sermons -->
+                <div class="sermons-grid" id="sermons-grid">
+                    <article class="sermon-card" data-category="sermons">
+                        <div class="sermon-thumbnail">
+                            <img src="images/sermon-1.jpg" alt="The Heart of Worship">
+                            <div class="sermon-play-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+                                </svg>
+                            </div>
+                            <span class="sermon-badge">Sermon</span>
+                        </div>
+                        <div class="sermon-content">
+                            <p class="sermon-series">Psalms of Praise</p>
+                            <h3 class="sermon-title">The Heart of Worship</h3>
+                            <div class="sermon-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Dec 15, 2024</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 45 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sermon-card" data-category="sermons">
+                        <div class="sermon-thumbnail">
+                            <img src="images/sermon-2.jpg" alt="Walking in Faith">
+                            <div class="sermon-play-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+                                </svg>
+                            </div>
+                            <span class="sermon-badge">Sermon</span>
+                        </div>
+                        <div class="sermon-content">
+                            <p class="sermon-series">Living the Gospel</p>
+                            <h3 class="sermon-title">Walking in Faith</h3>
+                            <div class="sermon-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Dec 8, 2024</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 52 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sermon-card" data-category="teachings">
+                        <div class="sermon-thumbnail">
+                            <img src="images/sermon-3.jpg" alt="Understanding Grace">
+                            <div class="sermon-play-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+                                </svg>
+                            </div>
+                            <span class="sermon-badge">Teaching</span>
+                        </div>
+                        <div class="sermon-content">
+                            <p class="sermon-series">Foundations of Faith</p>
+                            <h3 class="sermon-title">Understanding Grace</h3>
+                            <div class="sermon-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Dec 1, 2024</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 38 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sermon-card" data-category="sermons">
+                        <div class="sermon-thumbnail">
+                            <img src="images/sermon-4.jpg" alt="Prayer That Moves Mountains">
+                            <div class="sermon-play-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+                                </svg>
+                            </div>
+                            <span class="sermon-badge">Sermon</span>
+                        </div>
+                        <div class="sermon-content">
+                            <p class="sermon-series">Power in Prayer</p>
+                            <h3 class="sermon-title">Prayer That Moves Mountains</h3>
+                            <div class="sermon-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 24, 2024</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 48 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sermon-card" data-category="shorts">
+                        <div class="sermon-thumbnail">
+                            <img src="images/sermon-5.jpg" alt="Daily Devotional: Trust">
+                            <div class="sermon-play-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+                                </svg>
+                            </div>
+                            <span class="sermon-badge">Short</span>
+                        </div>
+                        <div class="sermon-content">
+                            <p class="sermon-series">Morning Moments</p>
+                            <h3 class="sermon-title">Daily Devotional: Trust</h3>
+                            <div class="sermon-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 20, 2024</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 8 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sermon-card" data-category="teachings">
+                        <div class="sermon-thumbnail">
+                            <img src="images/sermon-6.jpg" alt="The Armor of God">
+                            <div class="sermon-play-overlay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+                                </svg>
+                            </div>
+                            <span class="sermon-badge">Teaching</span>
+                        </div>
+                        <div class="sermon-content">
+                            <p class="sermon-series">Spiritual Warfare</p>
+                            <h3 class="sermon-title">The Armor of God</h3>
+                            <div class="sermon-meta">
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 17, 2024</span>
+                                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="meta-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 55 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-cta">
+                    <button class="btn btn-outline btn-lg" id="load-more-sermons">Load More Messages</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Series -->
+        <section class="section bg-cream">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-divider center"></div>
+                    <h2 class="section-title center">Featured Series</h2>
+                    <p class="section-subtitle">Dive deep into these comprehensive sermon series.</p>
+                </div>
+
+                <!-- REPLACE: Update series images and information -->
+                <div class="series-grid">
+                    <div class="series-card">
+                        <img src="images/series-1.jpg" alt="Living the Gospel">
+                        <div class="series-overlay"></div>
+                        <div class="series-content">
+                            <h3 class="series-title">Living the Gospel</h3>
+                            <p class="series-episodes">12 Episodes</p>
+                        </div>
+                    </div>
+                    <div class="series-card">
+                        <img src="images/series-2.jpg" alt="Psalms of Praise">
+                        <div class="series-overlay"></div>
+                        <div class="series-content">
+                            <h3 class="series-title">Psalms of Praise</h3>
+                            <p class="series-episodes">8 Episodes</p>
+                        </div>
+                    </div>
+                    <div class="series-card">
+                        <img src="images/series-3.jpg" alt="Through the Gospels">
+                        <div class="series-overlay"></div>
+                        <div class="series-content">
+                            <h3 class="series-title">Through the Gospels</h3>
+                            <p class="series-episodes">24 Episodes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="newsletter-grid">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-title">Stay Connected</h3>
+                        <p class="newsletter-text">Receive weekly devotionals, sermon updates, and ministry news.</p>
+                    </div>
+                    <form class="newsletter-form" id="footer-newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary btn-icon-only" aria-label="Subscribe">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Ben J Stevens</span>
+                        </a>
+                        <p class="footer-tagline">Preaching Truth. Reaching People. Transforming Lives.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 class="footer-heading">Ministry</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="sermons.html">Sermons</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 class="footer-heading">Connect</h4>
+                        <ul>
+                            <li><a href="bookings.html">Book Speaking</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4 class="footer-heading">Follow</h4>
+                        <div class="social-links">
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                                </svg>
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; <span id="current-year"></span> Ben J Stevens Ministry. All rights reserved.</p>
+                    <p>Built with faith and purpose.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
