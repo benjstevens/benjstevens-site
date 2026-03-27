@@ -483,6 +483,7 @@ ul {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
+    color: #8F8988;
 }
 
 @media (min-width: 768px) {
@@ -769,7 +770,7 @@ ul {
 
 /* === Footer === */
 .footer {
-    background-color: var(--charcoal);
+    background-color: var(#8F8988);
     color: var(--off-white);
 }
 
