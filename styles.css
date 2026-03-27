@@ -10,6 +10,7 @@
     --off-white: #FAF9F6;
     --cream: #F4F1EA;
     --charcoal: #1A1A1A;
+    --softgray: #8F8988;
     --text-primary: #2C2C2C;
     --text-secondary: #595959;
     --text-muted: #8C8C8C;
@@ -770,7 +771,7 @@ ul {
 
 /* === Footer === */
 .footer {
-    background-color: var(--lightgray);
+    background-color: var(--softgray);
     color: var(--off-white);
 }
 
