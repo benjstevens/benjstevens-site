@@ -770,7 +770,7 @@ ul {
 
 /* === Footer === */
 .footer {
-    background-color: var(#8F8988);
+    background-color: var(--#8F8988);
     color: var(--off-white);
 }
 
